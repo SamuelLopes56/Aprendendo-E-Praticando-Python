@@ -49,6 +49,7 @@ print(nova_string)
 """
 
 input_do_usuario = input("Qual letra deseja colocar maiúscula: ")
+input_do_usuario = input_do_usuario.lower()
 while contador < tamanho_frase:
     letra = frase[contador]
     if letra == input_do_usuario:

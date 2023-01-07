@@ -20,7 +20,7 @@ if num1.isdigit() and num2.isdigit():
     num2 = int(num2)
     print(num1 + num2)
 else:
-    print("Não pude converter os números para realizar contas.")
+    print("Não pude converter os números para realizar a soma.")
 
 """ Esse código faz algo parecido que o código de cima, porém ele verifica tudo, se o número é digito, inteiro, float ou negativo.
 import re
