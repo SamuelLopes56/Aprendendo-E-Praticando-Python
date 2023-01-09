@@ -13,7 +13,17 @@ inteiro, informe que não é um número inteiro.
 
 #Resolução do exercício 1:
 
-pass
+numero = input("Digite um número inteiro: ")
+
+while not numero.isdigit():
+    print("Você precisa diginar um número inteiro!")
+    numero = input("Digite um número: ")
+
+numero = int(numero)
+if numero % 2 == 0:
+    print("O número digitado é par!")
+else:
+    print("O número digitado é impar!")
 
 #PExercício 2:
 
@@ -25,7 +35,19 @@ Bom dia 0-11, Boa tarde 12-17 e Boa noite 18-23.
 
 #Resolução do exercício 2:
 
-pass
+horario = input("Informe o horário: ")
+
+while not horario.isdecimal():
+    print("Você precisa digitar o horário!")
+    horario = input("Informe o horário: ")
+
+horario = float(horario)
+if horario >= 12 and horario < 18:
+    print("Boa Tarde!")
+elif horario >=18 and horario <= 23 :
+    print("Boa noite!")
+else:
+    print("Bom dia!")
 
 #PExercício 3:
 
@@ -37,4 +59,12 @@ menos escreva "Seu nome é curto"; se tiver entre 5 e 6 letras, escreva
 
 #Resolução do exercício 3:
 
-pass
+nome = input("Informe o seu primeiro nome: ")
+letras = len(nome)
+
+if letras <= 4:
+    print("Seu nome é curto!")
+elif letras >=5 and letras <= 6:
+    print("Seu nome é normal!")
+else:
+    print("Seu nome é muito grande!")
