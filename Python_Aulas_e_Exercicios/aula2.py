@@ -11,3 +11,15 @@ print('João', 'e', 'Maria', sep='-', end='@@@@@@@')
 
 print('824', '176', '070', sep='.', end='-')
 print('18')
+
+# Escape
+print("Luiz \"Otávio")
+print("Luiz \"Otávio\"")
+
+# r
+print(r"Luiz \"Otávio\"")
+
+print('Luiz "Otávio"')
+print(1, 'Luiz "Otávio"')
+print("Luiz 'Otávio'")
+print(2, "Luiz 'Otávio'")
